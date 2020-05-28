@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="MyTest">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
+    <script src="app.js"></script>
+    <style>body {font-size:1.2em;}</style>
+    <meta charset="utf-8">
+    <title>My Coursera 1st Assessement</title>
+  </head>
+  <body>
+    <h1>My first Assessement </h1>
+    <div ng-controller="MyTController">
+      <div >
+        Enter Items : <input type="text" ng-model="items">
+      </div>
+      <div >
+        <i>We don't accept empty strings as an item towards count(i.e., ",    ,")</i>
+      </div>
+      <div >
+        <b>{{ans}}</b>
+      </div>
+      <div >
+        <button ng-click="checkstatus()">Check If Too Much</button>
+      </div>
+    </div>
+  </body>
+</html>
